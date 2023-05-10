@@ -86,7 +86,7 @@
             }
             echo json_encode($re);
         }
-
+        
         public function get_option() {
             $data["datas"] = $this->db->get("option")->result_array();
             echo json_encode($data);
@@ -120,7 +120,7 @@
 
             echo json_encode($re);
         }
-
+        
         public function view_grade($idoption = null)
         {
             $re = [];
@@ -139,7 +139,6 @@
             {
                 $re["status"] = false;
             }
-
             echo json_encode($re);
         }
     }
